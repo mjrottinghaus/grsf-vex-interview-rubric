@@ -1,0 +1,117 @@
+@import "../global.css";
+
+/* one grid per rubric item: the name, then an equal column per button, all sharing the screen width */
+.container {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) repeat(var(--rubric-category-count), minmax(0, 1fr));
+    width: 100%;
+}
+
+/* let the cells sit directly in the grid */
+.container > tr {
+    display: contents;
+}
+
+.rubricRowHeading {
+    position: relative; /* anchors the notes pop up */
+    align-self: center;
+    padding: 10px;
+}
+
+/* the rubric item name, styled as plain text but tappable */
+.rubricNameButton {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+.rubricNotes {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    z-index: 10;
+    width: max-content;
+    max-width: min(500px, 80vw);
+    margin: 0;
+    padding: 10px 10px 10px 26px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* pinned open by a tap/click */
+.rubricNotes[data-open="true"] {
+    display: block;
+}
+
+/* only devices with a real pointer get hover, so it doesn't stick on touch screens */
+@media (hover: hover) {
+    .rubricRowHeading:hover .rubricNotes,
+    .rubricNameButton:focus-visible + .rubricNotes {
+        display: block;
+    }
+}
+
+/* every button fills its column and matches the tallest one, longer labels wrap inside it */
+.rubricRowButton {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    background-color: var(--button-off-color);
+    color: #000;
+    padding: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* when the button is pressed, this is the color it will change to */
+.rubricRowButton[aria-pressed="true"] {
+    background-color: var(--button-on-color);
+    color: #fff;
+}
+
+/* the judge's notes field, on its own row under the buttons */
+.rubricRowNotesCell {
+    grid-column: 2 / -1;
+}
+
+.rubricRowNotes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0 10px;
+}
+
+.rubricRowNotesInput {
+    flex: 1;
+    min-width: 0;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+}
+
+/* narrow screens: the name gets its own line and the buttons split the full width */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(var(--rubric-category-count), minmax(0, 1fr));
+    }
+
+    .rubricRowHeading,
+    .rubricRowNotesCell {
+        grid-column: 1 / -1;
+    }
+
+    .rubricRowNotes {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Goldman';
+  /* Choose a name for your font family */
+  src: url('../assets/fonts/goldman.ttf') format('truetype');
+  /* Replace with the correct path and format */
+  font-weight: normal;
+  /* Adjust font weight if needed */
+  font-style: normal;
+  /* Adjust font style if needed */
+}
+
+:root {
+
+    /* colors */
+    --button-off-color: #f0f0f0;
+    --button-on-color: #007bff;
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+  --font-helvetica: "Helvetica";
+  --font-goldman: "Goldman";
+
+  /* Font Sizes */
+  /* Desktop */
+
+  /* Mobile */
+  --h1-size-mobile: 25px;
+  --h3-size-mobile: 18px;
+  --p-size-mobile: 15px;
+}
