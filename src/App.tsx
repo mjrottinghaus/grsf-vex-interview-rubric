@@ -93,6 +93,7 @@ function App() {
 
   return (
     <div className={styles.App}>
+      <p>Instructions: For each rubric, choose 2-3 questions to ask the students.  Fill out the rubric based on their answers.  Ask followups as needed.</p>
       <Rubric
         rubricTitle="Explain Your Learning"
         sampleQuestions={explainLearningQuestions}

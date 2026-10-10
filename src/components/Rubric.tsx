@@ -24,7 +24,7 @@ export const Rubric = ({ rubricTitle, sampleQuestions, rubricCategories, rubricL
     <div className={styles.rubric}>
         <h1>{rubricTitle}</h1>
 
-        <ul>
+        <ul className={styles.sampleQuestions}>
             {
                 sampleQuestions.map(question => {
                     return <li>{question}</li>

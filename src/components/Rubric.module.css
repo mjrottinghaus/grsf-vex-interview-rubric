@@ -3,3 +3,10 @@
 .rubric {
     display: block;
 }
+
+.sampleQuestions {
+    padding: 10px 10px 10px 26px;
+    color: #000;
+    text-align: left;
+    list-style-type: disc;
+}
