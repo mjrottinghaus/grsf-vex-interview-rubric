@@ -39,7 +39,7 @@ export const Rubric = ({ rubricTitle, sampleQuestions, rubricCategories, rubricL
                     rubricItemName={category.name}
                     rubricItemListenForNotes={category.notes}
                     rubricCategories={ rubricLevels.map((level) => {
-                        return `${level.name}: ${level.value} point(s)`
+                        return `${level.name}`
                     }) }
                     />
                 );

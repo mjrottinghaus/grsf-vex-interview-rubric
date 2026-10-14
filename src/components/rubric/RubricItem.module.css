@@ -1,4 +1,4 @@
-@import "../global.css";
+@import "../../global.css";
 
 /* one grid per rubric item: the name, then an equal column per button, all sharing the screen width */
 .container {

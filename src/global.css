@@ -12,8 +12,30 @@
 :root {
 
     /* colors */
-    --button-off-color: #f0f0f0;
-    --button-on-color: #007bff;
+    --button-off-color: var(--light);
+    --button-on-color: var(--dark);
+
+    /* color themes */
+    /* --dark: #3d007a; */
+    /* --light: #e8ecf1; */
+
+    /* --primary: #c8ff00; */
+    /* --secondary: #06110d; */
+
+    /* --dark: #0038ff; */
+    /* --light: #ffd8b8; */
+
+    /* --dark: #042f32; */
+    /* --light: #d6ffcb; */
+
+    --dark: #5f2cff;
+    --light: #dff6ff;
+
+    /* --dark: #cfff74; */
+    /* --light: #2f3a1d; */
+
+    /* --dark: #cfff74; */
+    /* --light: #2f3a1d; */
 
   /* Fonts */
   --font-roboto: "Roboto";

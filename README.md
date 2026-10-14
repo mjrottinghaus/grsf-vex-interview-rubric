@@ -4,6 +4,10 @@ React Version of https://content.vexrobotics.com/kb/global-robotics/team-intervi
 
 NOTE: All rubric content was developed by GRSF/VEX/IFI and is not my own.
 
+For development requests, please use github issues. 
+
+For usage requests, please reach out to my juding specific communications channel (mrott.judging@gmail.com)
+
 ## Development
 
 ```bash

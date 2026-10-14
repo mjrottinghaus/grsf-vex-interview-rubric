@@ -1,0 +1,106 @@
+{
+    "scoring_categories": {
+        "4": "Exemplary",
+        "3": "Proficent",
+        "2": "Developing",
+        "1": "Beginning" 
+    },
+    "rubric_sections": [
+        {
+            "category_name": "Notebook Organization",
+            "critera": [
+                {
+                    "category_name": "Information is easy to reference",
+                    "scoring_options": {
+                        "4": "Pages are numbered, entries are ordered chronologically or by section, and a table of contents leads to specific entries.",
+                        "3": "Pages are numbered with a table of contents, but finding an entry takes searching.",
+                        "2": "Some organization is present, but locating information is difficult.",
+                        "1": "No pagination or table of contents. Information cannot be located."
+                    }
+                },
+                {
+                    "category_name": "Contributors are identifiable",
+                    "scoring_options": {
+                        "4": "The team number appears on the notebook, and all entries are signed or initialed by the student who wrote them.",
+                        "3": "The team number appears, and most entries are attributed to a student.",
+                        "2": "The team number appears, but entries are rarely attributed.",
+                        "1": "The team number is missing, or entries are not attributed at all."
+                    }
+                },
+                {
+                    "category_name": "Record spans the season",
+                    "scoring_options": {
+                        "4": "Dated entries span the season, demonstrating a consistent habit of notebooking.",
+                        "3": "Dated entries span the season, showing notebooking habits with some gaps.",
+                        "2": "Entries cluster in a few short periods, or large stretches of the season are missing.",
+                        "1": "Entries are undated, or all appear to have been created at one time."
+                    }
+                },
+                {
+                    "category_name": "Outside sources are credited",
+                    "scoring_options": {
+                        "4": "Outside sources (designs, mechanisms, code, and ideas the team built on) are named where they appear.",
+                        "3": "Most outside sources are named, though some appear without credit.",
+                        "2": "A few sources are named, or credits appear only as a list, not where they were used.",
+                        "1": "Outside work appears with no credit."
+                    }
+                }
+            ]
+        },
+        {
+            "category_name": "Engineering Design Process - Define",
+            "critera": [
+                {
+                    "category_name": "Criteria and constraints are defined",
+                    "scoring_options": {
+                        "4": "The notebook defines and explains the problem along with the rules and constraints that could impact possible solutions.",
+                        "3": "The notebook defines a problem without explanation,and lists related criteria and constraints.",
+                        "2": "A problem is defined without specific criteria or limits.",
+                        "1": "The problem to be solved is not defined and no criteria and constraints appear."
+                    }
+                },
+                {
+                    "category_name": "Game strategy is documented",
+                    "scoring_options": {
+                        "4": "The notebook describes the team's scoring priorities with reasoning and tradeoffs that come with those priorities.",
+                        "3": "The notebook describes the team's scoring priorities with some reasoning. No tradeoffs are documented.",
+                        "2": "Strategy is mentioned without reasoning.",
+                        "1": "No strategy is documented."
+                    }
+                },
+                {
+                    "category_name": "Brainstorming is documented",
+                    "scoring_options": {
+                        "4": "Several distinct approaches (coding, engineering, and/or strategy) are recorded with enough detail to see how they differ.",
+                        "3": "Three or more approaches are recorded without comparison, or one or two ideas appear with comparison.",
+                        "2": "One or two ideas appear with no comparison.",
+                        "1": "No brainstorming appears, or a single solution appears already chosen."
+                    }
+                }
+            ]
+        },
+        {
+            "category_name": "",
+            "critera": [
+                {
+                    "category_name": "",
+                    "scoring_options": {
+                        "4": "",
+                        "3": "",
+                        "2": "",
+                        "1": ""
+                    }
+                },
+                {
+                    "category_name": "",
+                    "scoring_options": {
+                        "4": "",
+                        "3": "",
+                        "2": "",
+                        "1": ""
+                    }
+                }
+            ]
+        }
+    ]
+}
